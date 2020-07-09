@@ -4,7 +4,7 @@ import OrbitControls from "three-orbitcontrols";
 import * as OBJLoader from "three-obj-loader";
 OBJLoader(THREE);
 
-var earthMesh, freedomMesh;
+var freedomMesh;
 var scene;
 
 class Cube extends Component {
@@ -30,7 +30,6 @@ class Cube extends Component {
 
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
 
-    //Add SPHERE
     //LOAD TEXTURE and on completion apply it on box
     var loader = new THREE.TextureLoader();
     loader.load(
